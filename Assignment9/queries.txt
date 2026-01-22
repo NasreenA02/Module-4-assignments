@@ -1,0 +1,33 @@
+Step 1:-
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  email TEXT,
+  age INTEGER,
+  course TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+Insert Data :-
+INSERT INTO students VALUES (1, 'Khusboo', 'kosee@gmail.com', 18, 'English', CURRENT_TIMESTAMP);
+INSERT INTO students VALUES (2, 'Dimple Sharma', 'dimpy@gmail.com', 21, 'Computer Science'),
+INSERT INTO students VALUES (3, 'Divya ', 'divya@gmail.com', 19, 'Biology'),
+INSERT INTO students VALUES (4, 'Radhika Verma', 'radha@gmail.com', 22, 'Computer Science'),
+INSERT INTO students VALUES (5, 'Sneha ', 'sneha@gmail.com', 20, 'English'),
+INSERT INTO students VALUES (6, 'Kirtika', 'kirti@gmail.com', 23, 'Math');
+
+
+Step 3 :- Read data
+1. SELECT * FROM students
+2. SELECT * FROM students WHERE age > 20;
+3. SELECT name, email FROM students;
+4. SELECT * FROM students WHERE course = 'Math';
+
+Step 4 :- update data
+1. UPDATE students SET age = 22 WHERE id = 1;
+2. UPDATE students SET course = 'Data Science' WHERE course = 'Computer Science';
+SELECT * FROM students
+
+Step 5:- Delete data
+1. DELETE FROM students WHERE id = 2;
+2. DELETE FROM students WHERE age < 20;
+
